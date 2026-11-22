@@ -2,64 +2,50 @@
 .agent/
 .cursor/
 
-# --- Secrete, variabile de mediu (CRITIC) ---
+# --- Environment & Secrets ---
 .env
 .env.*
 !.env.example
 *.pem
-appsettings.Development.json
-appsettings.*.json
 
-# --- Baze de date locale (fără conflicte) ---
-*.db
-*.sqlite
-*.sqlite3
-*.db-shm
-*.db-wal
-*.mdf
-*.ldf
-
-# --- Node.js / React / Vite / Frontend ---
+# --- Node.js / Frontend / Backend / Worker ---
 node_modules/
 dist/
 dist-ssr/
 build/
-.next/
 coverage/
 .eslintcache
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 *.log
 
-# --- C# / ASP.NET Core (În caz că adaugi și un API) ---
-bin/
-obj/
-.vs/
-*.user
-*.userosscache
-*.sln.docstates
-*.suo
-TestResults/
+# --- Playwright E2E Artifacts ---
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
 
-# --- Python ---
-__pycache__/
-venv/
-.venv/
-env/
-*.pyc
-*.pyo
-*.pyd
+# --- Docker Local Overrides ---
+docker-compose.override.yml
 
-# --- IDEs & Editor ---
+# --- Local Databases ---
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# --- IDEs & Editors ---
 .idea/
 .vscode/
 *.swp
 *.swo
 .fleet/
 
-# --- OS / Sistem (Windows & Mac) ---
+# --- OS Files (Windows & macOS) ---
 .DS_Store
 .AppleDouble
 ._*
@@ -67,5 +53,3 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
-
-.agent/
