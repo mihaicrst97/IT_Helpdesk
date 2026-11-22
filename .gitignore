@@ -1,7 +1,3 @@
-# --- Agent AI & Prompturi (CRITIC: Nu urca regulile pe repo-ul clientului) ---
-.agent/
-.cursor/
-
 # --- Environment & Secrets ---
 .env
 .env.*
@@ -53,3 +49,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+.agent/
+.cursor/
