@@ -1,0 +1,71 @@
+# --- Agent AI & Prompturi (CRITIC: Nu urca regulile pe repo-ul clientului) ---
+.agent/
+.cursor/
+
+# --- Secrete, variabile de mediu (CRITIC) ---
+.env
+.env.*
+!.env.example
+*.pem
+appsettings.Development.json
+appsettings.*.json
+
+# --- Baze de date locale (fără conflicte) ---
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+
+# --- Node.js / React / Vite / Frontend ---
+node_modules/
+dist/
+dist-ssr/
+build/
+.next/
+coverage/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# --- C# / ASP.NET Core (În caz că adaugi și un API) ---
+bin/
+obj/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+TestResults/
+
+# --- Python ---
+__pycache__/
+venv/
+.venv/
+env/
+*.pyc
+*.pyo
+*.pyd
+
+# --- IDEs & Editor ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.fleet/
+
+# --- OS / Sistem (Windows & Mac) ---
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+.agent/
